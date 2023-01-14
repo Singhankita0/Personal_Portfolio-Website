@@ -10,20 +10,22 @@
       rel="stylesheet"
       href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
   </head>
   <body>
     <div id="header">
       <div class="container">
         <nav>
           <img src="images/logo (2).jpg" alt="logo" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidebar">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
 
         <div class="header-text">
@@ -88,8 +90,8 @@
           </div>
 
           <div>
-            <i class="fa-brands fa-bootstrap"></i>
-            <h2>Bootstrap</h2>
+            <i class="fa-solid fa-code"></i>
+            <h2>Tailwind</h2>
           </div>
 
           <div>
@@ -103,9 +105,94 @@
     <!-- ...projects... -->
     <div id="projects">
       <div class="container">
-        <h1 class="sub-heading">Current Projects</h1>
+        <h1 class="sub-heading">Projects</h1>
         <h2>Skills grow. So will this portfolio.</h2>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/project 1.PNG" alt="" />
+            <div class="layer">
+              <h3>Job-Filtering-App</h3>
+              <p>
+                A job board with a filtering feature that utilizes array
+                manipulation to easily find jobs based on selected filters.
+              </p>
+              <a href="https://filtering-job-app.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/project 2.PNG" alt="" />
+            <div class="layer">
+              <h3>Guess-the-word-Game</h3>
+              <p>
+                A word guess game that shows jumbled words for you to guess the
+                correct word for that and uses some string manipulation to check
+                if you guessed it correct or not.
+              </p>
+              <a href="https://guess-the-word-game-murex.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/project3.PNG" alt="" />
+            <div class="layer">
+              <h3>URL-Shortening-App</h3>
+              <p>
+                A URL shortener that uses the shortcode API for shortened links,
+                the clipboard API for copy pasting and browser storage to save
+                results and persist them after refreshing.
+              </p>
+              <a href="https://url-shortening-app-nine.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left-col">
+            <h1 class="sub-heading">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>priya.singhankita@gmail.com
+            </p>
+
+            <div class="social-media-icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+          </div>
+          <div class="contact-right-col">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-text">
+      <!-- <h1>BACT TO TOP</h1> -->
+      <p>DESIGNED BY ANKITA SINGH</p>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
