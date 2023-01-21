@@ -12,6 +12,7 @@
     />
     <!-- <script src="main.js"></script> -->
   </head>
+
   <body>
     <div id="header">
       <div class="container">
@@ -21,49 +22,90 @@
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
 
-        <div class="header-text">
-          <h2>ANKITA SINGH</h2>
-          <h1>
-            FRONT-END <br />
-            WEB DEVELOPER
-          </h1>
+        <div class="header-text-container">
+          <div class="header-text">
+            <h2>ANKITA SINGH</h2>
+            <h1>
+              FRONT-END <br />
+              WEB DEVELOPER
+            </h1>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- about-section -->
-    <div id="about">
+    <!-- ...projects... -->
+    <div id="projects">
       <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/profile.jpg" alt="" srcset="" />
+        <h1 class="sub-heading">Projects</h1>
+        <h2>Skills grow. So will this portfolio.</h2>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/url_shortener.png" alt="" />
+            <div class="layer">
+              <h3>URL shortener</h3>
+              <p>
+                A URL shortener that uses the shortcode API for shortened links,
+                the clipboard API for copy pasting and browser storage to save
+                results and persist them after refreshing.
+              </p>
+              <a href="https://url-shortening-app-nine.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
           </div>
-          <div class="about-col-2">
-            <h1 class="sub-heading">About Me</h1>
-            <p>
-              Hello World! I'm Ankita Singh.<br /><br />
-              I love combining the worlds of logic and creative design to make
-              eye-catching, accessible, and user-friendly websites and
-              applications.<br />
-              <br />
-
-              Technology leads, society follows. The move towards increasing
-              inclusivity and diversity in the industry through representation
-              is of importance to me.<br /><br />
-              I'm excited to make the leap and continue refining my skills with
-              the right company.
-            </p>
+          <div class="project">
+            <img src="images/job_filtering.png" alt="" />
+            <div class="layer">
+              <h3>Job Postings</h3>
+              <p>
+                A job board with a filtering feature that utilizes array
+                manipulation to easily find jobs based on selected filters.
+              </p>
+              <a href="https://filtering-job-app.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/word_game.png" alt="" />
+            <div class="layer">
+              <h3>Guess Word</h3>
+              <p>
+                A word guess game that shows jumbled words for you to guess the
+                correct word for that and uses some string manipulation to check
+                if you guessed it correct or not.
+              </p>
+              <a href="https://guess-the-word-game-murex.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/pricing_component.png" alt="" />
+            <div class="layer">
+              <h3>Pricing Card</h3>
+              <p>
+                A word guess game that shows jumbled words for you to guess the
+                correct word for that and uses some string manipulation to check
+                if you guessed it correct or not.
+              </p>
+              <a href="https://guess-the-word-game-murex.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- skills................. -->
     <div id="skills">
       <div class="container">
@@ -71,7 +113,7 @@
         <div class="skills-list">
           <div>
             <i class="fa-brands fa-html5"></i>
-            <h2>HTML</h2>
+            <h2>HTML5</h2>
           </div>
 
           <div>
@@ -98,60 +140,55 @@
             <i class="fa-solid fa-code"></i>
             <h2>Typescript</h2>
           </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Responsive Design</h2>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Git</h2>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- ...projects... -->
-    <div id="projects">
+    <!-- about-section -->
+    <div id="about">
       <div class="container">
-        <h1 class="sub-heading">Projects</h1>
-        <h2>Skills grow. So will this portfolio.</h2>
-        <div class="project-list">
-          <div class="project">
-            <img src="images/url_shortener.png" alt="" />
-            <div class="layer">
-              <h3>URL-Shortening-App</h3>
-              <p>
-                A URL shortener that uses the shortcode API for shortened links,
-                the clipboard API for copy pasting and browser storage to save
-                results and persist them after refreshing.
-              </p>
-              <a href="https://url-shortening-app-nine.vercel.app/"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profile.jpg" alt="" srcset="" />
           </div>
-          <div class="project">
-            <img src="images/job_filtering.png" alt="" />
-            <div class="layer">
-              <h3>Job-Filtering-App</h3>
-              <p>
-                A job board with a filtering feature that utilizes array
-                manipulation to easily find jobs based on selected filters.
-              </p>
-              <a href="https://filtering-job-app.vercel.app/"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="project">
-            <img src="images/word_game.png" alt="" />
-            <div class="layer">
-              <h3>Guess-the-word-Game</h3>
-              <p>
-                A word guess game that shows jumbled words for you to guess the
-                correct word for that and uses some string manipulation to check
-                if you guessed it correct or not.
-              </p>
-              <a href="https://guess-the-word-game-murex.vercel.app/"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
+          <div class="about-col-2">
+            <h1 class="sub-heading">About Me</h1>
+            <p>
+              Hello, I am Ankita and I have over 2.5 years of experience in the
+              banking industry. I have a proven track record of success, having
+              been awarded National Winner for MF Pro by the MD and CEO of ICICI
+              Securities.
+            </p>
+            <p>
+              I am excited to take on a new challenge as a Frontend Developer,
+              where I believe my background in banking will be a valuable asset.
+              My problem-solving skills and understanding of customer needs will
+              help me excel in creating effective web and mobile apps that truly
+              meet user needs.
+            </p>
+            <p>
+              I am eager to learn and grow as a developer, and I am confident
+              that I can make a positive contribution to the development of
+              high-quality products. I am a quick learner, a team player and
+              always looking for ways to improve and innovate. I would love the
+              opportunity to discuss how I can bring my skills and experience to
+              your team.
+            </p>
           </div>
         </div>
       </div>
     </div>
+
     <div id="contact">
       <div class="container">
         <div class="row">
@@ -168,7 +205,7 @@
               <a href=""><i class="fa-brands fa-square-instagram"></i></a>
             </div>
           </div>
-          <div class="contact-right-col">
+          <!-- <div class="contact-right-col">
             <form action="">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
@@ -185,7 +222,7 @@
               ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
